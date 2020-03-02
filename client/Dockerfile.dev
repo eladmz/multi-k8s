@@ -3,7 +3,7 @@ FROM node:lts-alpine
 WORKDIR /app
 
 COPY ./package*.json ./
-RUN mpm install
+RUN npm install
 
 COPY ./ ./
 
